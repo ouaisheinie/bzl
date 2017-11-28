@@ -1,0 +1,105 @@
+<!-- $Id: valuecard_list.htm 14216 2015-02-04 02:27:21Z derek $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<!-- 订单搜索 -->
+<div class="form-div">
+  <form action="javascript:searchComment()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+    {$lang.vco_id}<input type="text" name="keywords" /> <input type="submit" class="button" value="{$lang.button_search}" />
+  </form>
+</div>
+
+<form method="POST" action="voucher.php?act=remove_order" name="listForm" onsubmit="javascript:return batch_removeorder();">
+<!-- start user_bonus list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+  <table cellpadding="3" cellspacing="1">
+    <tr>
+      <!-- <th>
+        <input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
+        {$lang.vco_id}</th> -->
+		<th>{$lang.vco_id}</th>
+    <th>购买者</th>
+	  <th>兑换券类型</th>
+    <th>支付方式</th>
+    <th>支付金额</th>
+    <th>支付状态</th>
+    <th>使用状态</th>
+	  <th>激活状态</th>
+	  <th>已激活次数</th>
+    <th>下单时间</th>
+    <th>支付时间</th>
+    <th>父级订单ID</th>
+    <!-- <th>{$lang.handler}</th> -->
+    </tr>
+    {foreach from=$vco_list item=order}
+    <tr>
+      <!-- <td><span><input value="{$order.vco_id}" name="checkboxes[]" type="checkbox">{$order.vco_id}</span></td> -->
+	  <!-- <td>{if $order.goods_ids}<font color=#ff3300>{/if}{$order.tg_sn}{if $order.goods_ids}</font>{/if}</td>     -->    
+      <td>{$order.vco_id}</td>      
+	  <td align=center>{$order.vco_user_id}</td>  
+      <td align=center>{$order.vco_voucher_id}</td>
+      <td align=center>{$order.vco_payment_type}</td>
+	  <td align=center>{$order.vco_payment_money}</td>
+	  <td align=center>{$order.vco_pay_status}</td>
+	  <!-- <td align=center>{if $order.shipping_id}<img src="images/yes.gif" >{else}<img src="images/no.gif" >{/if}</td> 图标-->
+	  <td align=center>{$order.vco_used_status}</td>
+    <td align=center>{$order.vco_activation_status}</td>
+    <td align=center>{$order.vco_activation_count}</td>
+    <td align=center>{$order.vco_addtime}</td>
+    <td align=center>{$order.vco_payment_time}</td>
+    <td align=center>{$order.vco_porder_id}</td>
+    <!-- <td align="center"> -->
+      <!-- {if $smarty.get.tgid} -->
+	  <!-- <a href="takegoods.php?act=order_view&tg_type={$smarty.get.tg_type}&is_used={$smarty.get.is_used}&tgid={$smarty.get.tgid}&id={$order.rec_id}">查看</a> | <a href="takegoods.php?act=order_view&tg_type={$smarty.get.tg_type}&is_used={$smarty.get.is_used}&tgid={$smarty.get.tgid}&id={$order.rec_id}">去发货</a> |  <a href="?act=remove_order&id={$order.rec_id}&tg_type={$smarty.get.tg_type}&is_used={$smarty.get.is_used}&tgid={$smarty.get.tgid}">移除</a> -->
+      <!-- {else} -->
+	  <!-- <a href="takegoods.php?act=order_view&id={$order.rec_id}">查看</a> | <a href="takegoods.php?act=order_view&id={$order.rec_id}">去发货</a> |  <a href="javascript:;" onclick="listTable.remove({$order.rec_id}, '{$lang.drop_confirm}', 'remove_order',)">移除</a> -->
+      <!-- {/if} -->
+        <!-- </td> -->
+    </tr>
+    {foreachelse}
+    <tr><td class="no-records" colspan="12">{$lang.no_records}</td></tr>
+    {/foreach}
+  </table>
+
+  <table cellpadding="4" cellspacing="0">
+    <tr>
+      <!-- <td><input type="submit" name="drop" id="btnSubmit" value="{$lang.drop}" class="button" disabled="true" /></td> -->
+      <td align="right">{include file="page.htm"}</td>
+    </tr>
+  </table>
+
+{if $full_page}
+</div>
+<!-- end user_bonus list -->
+</form>
+
+{insert_scripts files='jquery.json.js,transport.js'}
+<script type="text/javascript" language="JavaScript">
+  {literal}
+  onload = function()
+  {
+      document.forms['searchForm'].elements['keywords'].focus();
+      // 开始检查订单
+      startCheckOrder();
+  }
+  /**
+   * 搜索评论
+   */
+  function searchComment()
+  {
+      var keyword = Utils.trim(document.forms['searchForm'].elements['keywords'].value);
+        listTable.filter['keyword'] = keyword;
+        listTable.filter.page = 1;
+        listTable.loadList();
+  }
+  {/literal}
+
+  
+</script>
+{include file="pagefooter.htm"}
+{/if} 

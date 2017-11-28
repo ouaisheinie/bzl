@@ -1,0 +1,200 @@
+/* 通用默认样式 */
+body{
+    margin:0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+::selection{
+	background-color: #b3d4fc;
+	text-shadow:none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+input,button,select,textarea{
+	outline:none;
+}
+/*===========
+	������ʽ
+=============*/
+
+.center-block{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;    /*��Ԫ���ڸ�Ԫ�ؾ���*/
+}
+
+.pull-right{
+	float:right !important;
+}
+
+.pull-left{
+	float:left !important;
+}
+
+.text-right{
+	text-align: right !important;
+}
+
+.text-left{
+	text-align: left !important;
+}
+
+.text-center{
+	text-align: center !important;
+}
+
+.hide{
+	display:none !important;   /*display:none; ���غ� Ԫ�س�����ʧ*/
+}
+
+.show{
+	display:block !important;
+}
+
+.invisible{
+	visibility: hidden;    /* visibility: hidden;���غ�  Ԫ�ؿ����� ���ǻ���*/
+}
+
+.text-hide{
+	font:0/0 a;
+	color:transparent;
+	text-shadow:none;
+	background-color: transparent;
+	border:0;
+}
+::-webkit-input-placeholder { color:#bababa; }
+/*===========
+ �������  ���հ�
+=============*/
+.clearfix:before,.clearfix:after{   /*����һ��before  ���Է�ֹ�����margin�ص�*/
+    content:"";
+    display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+/* ---------------------------分享页面样式 --------------------------------- */
+.tickts_div{
+    width:1200px;
+    margin:0 auto;
+}
+.tickts_fromWho{
+    height: 127px;
+}
+.tickts_fromWho p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 127px;
+    margin:0;
+}
+.tickts_fromWho p a{
+    color:#ff0000;
+    font-size: 19px;
+}
+/* tickts_total_list */
+.tickts_list{
+    width:1130px;
+    height: 275px;
+    border:2px solid #ff0000;
+    margin:0 auto;
+    position: relative;
+}
+.tickts_list+.tickts_list{
+    margin-top:20px;
+}
+.tickts_list:last-child{
+    margin-bottom:70px;
+}
+/* tickts_face */
+.tickts_face{
+    float: left;
+    margin-left: 46px;
+    margin-top: 27px;
+}
+/* tickts_buy_info */
+.tickts_buy_info{
+    float: right;
+    font-size: 18px;
+    margin-right: 120px;
+}
+.tickts_buy_info ul{
+    position: relative;
+    top:15px;
+}
+.tickts_buy_info ul li{
+    margin:18px auto;
+}
+.tickts_buy_info ul li:last-child{
+    font-size: 14px;
+}
+.tickts_buy_info ul li span{
+    color:#ff0000;
+    font-weight: 500;
+}
+.tickts_buy_info ul li button{
+    padding:10px 30px;
+    font-size: 18px;
+    background:#ff0000;
+    border:1px solid #ffd2d2;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+/* 复选框模拟样式 */
+.label_m{
+    display: block;
+}
+.input_m{
+    position: absolute;
+    left: -99999px;
+}
+.i_m{
+    position: absolute;
+    display: inline-block;
+    margin-top:-1px;
+    width: 20px;
+    height: 20px;
+    background:url(../images/gray-vv.png)no-repeat;
+    background-size: 20px 20px;
+    vertical-align: middle;
+}
+.input_m:checked+i{
+    background:url(../images/red-vv_06.jpg)no-repeat;
+}
+.zhanwei{
+    display: inline-block;
+    width:17px;
+}
+.tickts_buy_info ul li:last-child a{
+    color:#ff0000;
+}
+/* corner_info */
+.corner_info{
+    width: 119px;
+    height: 52px;;
+    position: absolute;
+    right:0;
+}
+/* 额外样式 */
+.daiqianggou{
+    background:url(../images/hurry/daiqianggou.jpg)no-repeat;
+}
+.yiqianggou{
+    background:url(../images/hurry/yiqianggou.jpg)no-repeat;
+}
+.already_buy{
+    border:2px solid #cccccc;
+}
+.already_buy .ad_buy{
+    background:#cccccc;
+}

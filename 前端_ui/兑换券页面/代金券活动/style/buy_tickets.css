@@ -1,0 +1,182 @@
+/* buy_detailes */
+.main_Container{
+    width:1200px;
+    margin:0 auto;
+}
+h3{
+    font-size: 18px;
+    color:#474747;
+}
+.buy_detailes {
+    font-size: 18px;
+    width:100%;
+    border:1px solid #cccccc;
+    
+}
+.buy_detailes ul{
+    margin-top:40px;
+}
+.buy_detailes ul li{
+    margin:30px auto 30px 140px;
+}
+.buy_detailes ul li:nth-child(1){
+    color:#ff0000;
+}
+.buy_detailes ul li:nth-child(2){
+    width:165px;
+}
+.buy_detailes ul li:nth-child(2) span{
+    color:#ff0000;
+
+}
+.buy_detailes ul li:nth-child(2) label{
+    display:block;
+    width:18px;
+    height: 18px;
+    float:right;
+    line-height: 24px;
+    position: relative;
+    top:3px;
+}
+.buy_detailes ul li:nth-child(2) input{
+    position: absolute;
+    left:-99999px;
+}
+.buy_detailes ul li:nth-child(2) i{
+    display:block;
+    width:18px;
+    height: 18px;
+    background:url(../image/product/red-v_03.jpg)no-repeat;
+}
+.buy_detailes ul li:nth-child(3) span{
+    color:#ff0000;
+}
+.buy_detailes ul li:nth-child(4) button{
+    width:147px;
+    height: 43px;
+    font-size: 18px;
+    color:#fff;
+    background:#ff0000;
+    border:none;
+}
+.buy_detailes ul li:nth-child(4) img{
+    margin-left:100px;
+}
+.buy_detailes ul li:nth-child(5) a{
+    color:#ff2626;
+}
+.user_agreement label{
+    display:block;
+    float: left;
+    margin-top: 2px;
+    margin-right: 6px;
+}
+.user_agreement input{
+    position: absolute;
+    left:-99999px;
+}
+.user_agreement i{
+    display: inline-block;
+    width:18px;
+    height: 18px;
+    background:url(../image/product/gray_v.png)no-repeat;
+    background-size: 18px 18px;
+}
+.user_agreement input:checked+i{
+    background:url(../image/product/red-v_03.jpg)no-repeat;
+}
+#button1,#button2{
+    border:1px solid #c9c9c9;
+    padding:5px 24px;
+    margin-left: 8px;
+    background: #fff;
+    color:#000;
+}
+
+/*show div*/
+#div_show{
+    width:600px;
+    height: 330px;
+    position: absolute;
+    z-index: 1002;
+    background:#fff;
+}
+.show_header{
+    width:100%;
+    height: 50px;
+    background:#f5f5f5;
+    color:#606060;
+    line-height: 50px;
+}
+.show_header span{
+    margin-left:25px;
+}
+.show_header icon{
+    line-height: 50px;
+    display:inline-block;
+    width:12px;
+    height: 12px;
+    background:url(../image/XX/xx_03.jpg)no-repeat 5px 5px;
+    float:right;
+    padding:5px;
+    position: relative;
+    top:14px;
+    right:25px;
+}
+.show_body{
+    text-align: center;
+}
+.show_body img{
+    margin-top:20px;
+}
+.text1{
+    font-size: 16px;
+    color:#41a713;
+}
+.text2{
+    font-size: 14px;
+}
+.share_button{
+    padding:7px 22px;
+    color:#fff;
+    background:#f43934;
+    border:none;
+}
+#hand_copy{
+    width: 80%;
+    height: 35px;
+}
+.shade{ /*遮罩*/
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    background-color:black;
+    z-index: 1001;
+    display:none;
+}
+/* 支付失败窗口 */
+#false_div{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    z-index: 1002;
+    background: #fff;
+}
+#false_div .show_body img{
+    margin-top:40px;
+}
+.text3{
+    color:#f12d2e;
+}
+#false_div .show_body button{
+    padding:7px 22px;
+    color:#fff;
+    background: #f23b2d;
+    border:none;
+}

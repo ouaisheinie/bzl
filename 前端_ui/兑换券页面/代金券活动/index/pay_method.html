@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/defaultCss.css">
+    <link rel="stylesheet" href="../style/buy_tickets.css">
+    <title>购买兑换券</title>
+</head>
+<body>
+    <div class="main_Container">
+        <h3 class="title1">购买兑换券</h3>
+        <div class="buy_detailes">
+            <ul>
+                <li>支付订单:<span>￥5272兑换券一张</span></li>
+                <li>我的余额:<span>￥5272</span>
+                    <label>
+                        <input type="checkbox"><i></i>
+                    </label>
+                </li>
+                <li>还需支付: <span>￥1</span></li>
+                <li>
+                    支付方式: <button id="button1" name="WeChatQR">微信支付</button> <button id="button2" name="AlipayQR">支付宝支付</button>
+                    <br/>
+                    <br/>
+                    <img id="WeChatQR" class="qrcode" style="display:none" src="../image/QRCode/aliPayQRCode.jpg" alt="微信二维码">
+                    <img id="AlipayQR" class="qrcode" style="display:none" src="../image/QRCode/aliPayQRCode.jpg" alt="支付宝二维码">
+                </li>
+                <li class="user_agreement">
+                    <label class="clearfix">
+                        <input type="checkbox"><i></i>
+                    </label>
+                    我已阅读并同意<a href="javascript:" alt="使用协议地址">《兑换券使用协议》</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="divShade" class="shade"></div>
+    <div id="div_show" style="display:none">
+        <div class="show_header">
+            <span>支付成功</span><icon></icon>
+        </div>
+        <div class="show_body">
+            <img src="../image/XX/vv_03.jpg" alt=""><br>
+            <span class="text1">恭喜您,支付成功</span>
+            <br>
+            <br>
+            <span class="text2">点击复制链接到好友,支付成功后才能完成订单哦</span>
+            <br>
+            <br>
+            <button class="share_button">点击复制分享链接</button>
+            <br>
+            <br>
+            <input id="hand_copy" type="text" value=" 手动复制链接:">
+        </div>
+    </div>
+    <div id="false_div" style="display:none">
+        <div class="show_header">
+            <span>支付失败</span><icon></icon>
+        </div>
+        <div class="show_body">
+            <img src="../image/XX/false_03.jpg" alt="失败图标">
+            <br>
+            <br>
+            <span class="text3">支付失败,请重新支付</span>
+            <br>
+            <br>
+            <br>
+            <button>点击返回</button>
+        </div>
+    </div>
+<script src="../script/buy_tickets.js"></script>
+<script src="../script/jquery.min.js"></script>
+</body>
+</html>

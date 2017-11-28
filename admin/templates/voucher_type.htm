@@ -1,0 +1,99 @@
+<!-- $Id: bonus_type.htm 14216 2015-02-04 02:27:21Z derek $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<!-- start bonus_type list -->
+<!-- 兑换券搜索 -->
+
+<div class="form-div">
+  <form action="javascript:searchComment()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+    {$lang.prices}<input type="text" name="keywords" /> <input type="submit" class="button" value="{$lang.button_search}" />
+  </form>
+</div>
+
+<form method="post" action="" name="listForm">
+<div class="list-div" id="listDiv">
+{/if}
+
+  <table cellpadding="3" cellspacing="1">
+    <tr>
+      <th>{$lang.vc_id}</th>
+      <th>{$lang.vc_name}</th>          
+      <th>{$lang.vc_nickname}</th>
+  	  <th>{$lang.vc_activation_count}</th>  
+  	  <th>{$lang.vc_price}</th>
+  	  <th>{$lang.vc_saleprice}</th>
+  	  <th>{$lang.vc_limit_buycount}</th>
+      <th>{$lang.vc_limit_storecount}</th>
+      <th>{$lang.vc_sort}</th>
+      <th>{$lang.vc_status}</th>
+      <th>{$lang.vc_addtime}</th>
+      <th>{$lang.vc_updatetime}</th>
+      <th>{$lang.vc_starttime}</th>
+      <th>{$lang.vc_endtime}</th>
+      <th>{$lang.handler}</th>
+    </tr>
+    {foreach from=$type_list item=type}
+    <tr>
+      <td align="center">{$type.vc_id}</td>
+      <td class="first-cell">{$type.vc_name|escape:html}</td>      
+      <td align="center"><span>{$type.vc_nickname}</span></td>
+      <td align="center">{$type.vc_activation_count}</td>
+  	  <td align="center">{$type.vc_price}</td>
+  	  <td align="center">{$type.vc_saleprice}</td>
+  	  <td align="center">{$type.vc_limit_buycount}</td>
+      <td align="center">{$type.vc_limit_storecount}</td>
+      <td align="center">{$type.vc_sort}</td>
+      <td align="center">{$type.vc_status}</td>
+      <td align="center">{$type.vc_addtime}</td>
+      <td align="center">{$type.vc_updatetime}</td>
+      <td align="center">{$type.vc_starttime}</td>
+      <td align="center">{$type.vc_endtime}</td>
+      <td align="center">
+	    <!-- <a href="voucher.php?act=send&amp;id={$type.vc_id}&amp;send_by={$type.send_type}">{$lang.send}</a> |
+        <a href="voucher.php?act=tg_list&amp;tg_type={$type.type_id}&amp;is_used=-1">{$lang.view}</a> | -->
+        <a href="voucher.php?act=edit&amp;vc_id={$type.vc_id}">{$lang.edit}</a> |
+		<!-- <a href="voucher.php?act=add_goods&amp;type_id={$type.type_id}">{$lang.addgoods}</a> | -->
+        <a href="javascript:;" onclick="listTable.remove({$type.vc_id}, '{$lang.drop_confirm}')">{$lang.remove}</a></span></td>
+        
+    </tr>
+      {foreachelse}
+    <tr><td class="no-records" colspan="15">{$lang.no_records}</td></tr>
+      {/foreach}
+    <tr>
+      <td align="right" nowrap="true" colspan="15">{include file="page.htm"}</td>
+    </tr>
+  </table>
+
+{if $full_page}
+</div>
+</form>
+<!-- end bonus_type list -->
+{insert_scripts files='jquery.json.js,transport.js'}
+<script type="text/javascript" language="JavaScript">
+  {literal}
+  onload = function()
+  {
+      document.forms['searchForm'].elements['keywords'].focus();
+      // 开始检查订单
+      startCheckOrder();
+  }
+  /**
+   * 搜索评论
+   */
+  function searchComment()
+  {
+      var keyword = Utils.trim(document.forms['searchForm'].elements['keywords'].value);
+      
+        listTable.filter['keyword'] = keyword;
+        listTable.filter.page = 1;
+        listTable.loadList();
+  }
+  {/literal}
+
+  
+</script>
+{include file="pagefooter.htm"}
+{/if}

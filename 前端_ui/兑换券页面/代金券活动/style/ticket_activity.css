@@ -1,0 +1,383 @@
+/* 活动页标题 */
+.activity_img img{
+	width: 100%;
+}
+/* IpX */
+.main_container{
+	width:1200px;
+	margin:0 auto;
+}
+.main_container ul{
+	margin-top:-20px;
+}
+.IphoneX_banner{
+	border-bottom:2px solid #dadada;
+}
+/* iphone图片 */
+.IphoneX_banner{
+	height: 540px;
+	background:#f5f5f5;
+}
+.iPhone_photo{
+	display: block;
+	width:400px;
+	height: 440px;
+	float: left;
+	margin-left: 180px;
+	margin-top:45px;
+	margin-right:70px;
+}
+.iphone_introduce{
+	margin-top:100px;
+}
+.iphone_introduce dt{
+	font-size: 37.62px;
+	/*这里要弄个font-family*/
+	color:#4d4d4d;
+}
+.iphone_introduce dd{
+	font-size: 54.38px;
+	margin-left: 0;
+}
+.phone_message{
+	overflow:hidden;
+}
+.phone_message p{
+	font-size: 31.7px;
+	/* 需要一个font-family */
+	color:#4d4d4d;
+}
+.useTicket dt{
+	font-size: 25.91px;
+}
+.useTicket dd{
+	font-size: 17.91px;
+	margin-left: -1px;
+}
+.price-iphoneX{
+	margin-top:70px;
+}
+.price-iphoneX dl,.price-iphoneX span{
+	float: left;
+}
+.howMuch{
+	font-size: 62.57px;
+	margin-left: 5px;
+	margin-top:5px;
+}
+.original_price{
+	margin-top:-5px;
+	margin-left:1px;
+}
+.original_price dl dt del{
+	font-size: 22.02px;
+}
+.original_price dl dt{
+	display: table-cell;
+	font-size: 18px;
+	vertical-align: bottom;
+}
+.original_price dl button{
+	text-align:center;
+	font-size: 25px;
+	background-color: #f60336;
+	color:#fff;
+	margin-left: 0;
+	border:none;
+	width:100%;
+}
+/*pro_details*/
+.pro_details{
+	width:515px;
+	float:left;
+	background:#fff;
+	margin-top:90px;
+	display:none;
+}
+.pro_details:nth-child(1){
+	margin-left:156px;
+}
+.pro_details h2{
+	margin-top:0;
+	padding-left: 15px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 35.28px;
+	background:#f23b2d;
+	color:#fff;
+	font-weight: normal;
+}
+.pro_details .close_details{
+	font-size: 30px;
+	float:right;
+	margin-right:20px;
+	margin-top:13px;
+	border:none;
+	background:transparent;
+	color:#fff;
+}
+.pro_details ul li{
+	margin-top:5px;
+}
+.pro_details ul li p{
+	text-indent: 15px;
+	display:block;
+	width: 80px;
+	font-size: 13px;
+	color:#525252;
+}
+.pro_details ul li span{
+	font-size: 13px;
+	height: 40px;
+	color: #999999;
+	border:1px solid #cccccc;
+	line-height: 40px;
+}
+.pro_details ul li span,.pro_details ul li p{
+	float:left;
+}
+.pro1 span{
+	background:#f7f7f7;
+	line-height: 40px;
+	padding:2px 10px 2px 5px;
+	user-select: none;
+}
+.pro1 span:last-child{
+	margin-left:5px;
+}
+.pro1 span img{
+	margin-right: 10px;
+}
+.pro1 span button{
+	font-style: normal;
+	position: relative;
+	top:-13px;
+	border:none;
+	background:transparent;
+	color:#999999;
+}
+.pro2 button{
+	padding:13px 10px;
+	border:1px solid #cccccc;
+	background:transparent;
+}
+.pro2 button:last-child{
+	margin-left: 5px;
+}
+.pro3 div{
+	display: inline-block;
+	font-size: 20px;
+	color:#a5a5a5;
+	vertical-align: super;
+}
+.pro3 div del{
+	font-size: 40px;
+	font-weight: bold;
+}
+.pro4 div{
+	font-size: 20px;
+	color:#f60336;
+}
+.pro4 div strong{
+	font-size: 40px;
+}
+.pro3 icon,.pro4 icon{
+	position: relative;
+	top:-15px;
+}
+.buy_rightNow{
+	margin-left: 15px;
+}
+.sum{
+	width:60px;
+	height: 44px;
+	float: left;
+}
+.sum_num{
+	width:40px;
+	padding: 0;
+	height: 44px;
+	float:left;
+	text-align: center;
+	line-height: 44px;
+	border:1px solid #cccccc;
+}
+.sum .add{
+	background:#fff;
+	text-indent:-2.5px;
+	width:15px;
+	height: 23px;
+	float:right;
+	border:1px solid #cccccc;
+	border-bottom: none;
+	position: relative;
+	left:-2px;
+}
+.sum .reduce{
+	background:#fff;
+	text-indent:-1px;
+	width:15px;
+	height: 23px;
+	float:right;
+	border:1px solid #cccccc;
+	clear:right;
+	position: relative;
+	left:-2px;
+}
+.buy{
+	text-align: center;
+	line-height: 46px;
+	display: inline-block;
+	width:124px;
+	height: 46px;
+	font-size: 18.74px;
+	background:#f23b2d;
+	color:#fff;
+	float: left;
+	margin-left:8px;
+	border:none;
+}
+.share{
+	font-size: 12px;
+	width: 100%;
+	height: 33px;
+	background:#f23b2d;
+	color:#fff;
+	line-height: 33px;
+	text-align: center;
+	margin-top:9px;
+}
+/*Iphone8_banner*/
+.Iphone8_banner{
+	background-color:#f5f5f5;
+	height: 770px;
+	position: relative;
+}
+.Iphone8_banner p{
+	font-size: 31.7px;
+}
+.Iphone8_banner .iphone_message{
+	margin-left: 156px;
+}
+.Iphone8_banner .iphone_message,.Iphone8_banner .iPhone8_photo{
+	float:left;
+}
+.iphone_message p{
+	color:#4d4d4d;
+}
+.iPhone8_photo{
+	margin-top:40px;
+	margin-left: 115px;
+}
+.useIphone_Tickets{
+	position: relative;
+	top:55px;
+	font-size: 16px;
+	color:#f6324e;
+}
+.price-iphone8{
+	margin-top:40px;
+}
+.price-iphone8 .useTicket,.price-iphone8 .howMuch,.price-iphone8 .original_price{
+	float:left;
+}
+.more-choise{
+	position: absolute;
+	bottom:30px;
+	left: 50%;
+	right: 0;
+	width:460px;
+	height: 100px;
+	margin-left: -230px;
+}
+.more-choise legend{
+	font-size: 45px;
+}
+.more-choise p{
+	font-size: 30px;
+	font-weight: normal;
+	text-align:center;
+	position: relative;
+	top:-30px;
+}
+
+/* tickets */
+.tickets{
+	margin-top:20px;
+	height: 700px;
+	background-color: #f5f5f5;
+}
+.blueCard{
+	margin: 20px auto;
+}
+.redCard a,.blueCard a,.greenCard a{
+	display:block;
+	height: 219px;
+	float: left;
+}
+.red1{
+	width:540px;
+	background: url(../image/tickets/redCard1.png)no-repeat;
+	margin-left: 5px;
+}
+.red2{
+	width:318px;
+	background: url(../image/tickets/redCard2.png)no-repeat;
+	margin-left:5px;
+	margin-right:5px;
+}
+.red3{
+	width:321px;
+	background: url(../image/tickets/redCard3.png)no-repeat;
+}
+.blue1{
+	width:540px;
+	background: url(../image/tickets/blueCard1.png)no-repeat;
+	margin-left: 5px;
+}
+.blue2{
+	width:318px;
+	background: url(../image/tickets/blueCard2.png)no-repeat;
+	margin-left:5px;
+	margin-right:5px;
+}
+.blue3{
+	width:321px;
+	background: url(../image/tickets/blueCard3.png)no-repeat;
+}
+.green1{
+	width:540px;
+	background: url(../image/tickets/greenCard1.png)no-repeat;
+	margin-left: 5px;
+}
+.green2{
+	width:318px;
+	background: url(../image/tickets/greenCard2.png)no-repeat;
+	margin-left:5px;
+	margin-right:5px;
+}
+.green3{
+	width:321px;
+	background: url(../image/tickets/greenCard3.png)no-repeat;
+}
+/*instruction*/
+.instruction{
+	margin-top:20px;
+	height: 530px;
+	background-color: #f5f5f5;
+}
+.rule{
+	padding:108px 130px 30px 130px;
+}
+.rule li{
+	font-size: 14px;
+	color:#666666;
+	line-height: 30px;
+}
+.rule li:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	color:000;
+}
+
+/* 兼容性 */

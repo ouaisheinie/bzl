@@ -1,0 +1,387 @@
+.myTickets{
+    width:990px;
+}
+.header_name{
+    float:left;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border-bottom:2px solid #ff6600;
+}
+.how_to_buy{
+    float:right;
+}
+.how_to_buy li{
+    float:left;
+    line-height: 40px;
+}
+.how_to_buy li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#1080ff;
+    height: 30px;
+    line-height: 30px;
+}
+.how_to_buy li:nth-child(1) a{
+    margin-right:10px;
+    color:#656565;
+}
+/* myTickets_body */
+.myTickets_body{
+    margin-top:10px;
+    min-height: 500px;
+}
+
+/* 这里操作每个模块可见不可见 */
+.tickts_list_1{
+    /* display:none;  */
+}
+.tickts_list_2{
+    display:none;
+}
+.tickts_list_3{
+    display:none;
+}
+.tickts_list_4{
+    display: none;
+}
+
+
+
+.ti_li_ul{
+    overflow:hidden;
+    margin-top:26px;
+}
+.ti_li_ul li{
+    margin:auto 60px 40px;
+}
+/* myTickets_footer */
+.myTickets_footer{
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    clear:left;
+}
+.myTickets_footer button{
+    padding:6px 15px;
+    color:#b4b3b3;
+    border:1px solid #b4b3b3;
+    background: #fff;
+}
+.page_num_first,.page_num_last{
+    font-style: normal;
+}
+.page_num_first{
+    color:#ff4b4b;
+}
+.myTickets_footer input{
+    text-align: center;
+    width:40px;
+    border:1px solid #b4b3b3;
+    height: 25px;
+    padding-top:3px;
+}
+.skip{
+    color:#000 !important;
+}
+/*已使用兑换券 页面的部分样式*/
+.tickts_navbar ul li button{
+    font-size: 14.67px;
+    float: left;
+    width:150px;
+    text-align: center;
+    background:transparent;
+    border:none;
+}
+.tickts_navbar ul{
+    margin-top:10px;
+    margin-left: 30px;
+}
+.tickts_navbar ul li button:hover{
+    color:#ed5854;
+}
+/*兑换券单张样式*/
+.tickets_st{
+    width:190px;
+    background:#fe5d64;
+    border:3px solid #fe5d64;
+    position: relative;
+    float:left;
+    /* overflow: hidden; */
+}
+.half-circle{
+    position: absolute;
+    z-index: 1000;
+    width:58px;
+    height: 58px;
+    border-radius:29px;
+    -o-border-radius:29px;
+    -webkit-border-radius:29px;
+    -moz-border-radius:29px;
+    background:#fff;
+    left:66px;
+    top:-34px;
+}
+  /* 价钱 how_much_money*/
+.how_much_money{
+    font-size: 50px;
+    float: left;
+    margin-top:54px;
+    position: relative;
+    left:20px;
+    top:6px;
+    font-weight: bold;
+    color: #fff;
+}
+.unit{
+    float:right;
+    margin-top:54px;
+    position: relative;
+    right:22px;
+    top: 14px;
+}
+.unit strong{
+    font-size: 20px;
+    color:#fff;
+}
+.unit b{
+    font-size: 17px;
+    color:#fff;
+}
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    clear:both;
+ }
+.order .line {
+    display: inline-block;
+    width: 50px;
+    color:#fff;
+    border-top: 1px solid #ccc ;
+ }
+.order .txt {
+    color: #686868;
+    vertical-align: -4px;
+    color:#fff;
+ }
+.share_x{
+    font-size: 12px;
+    text-align: center;
+    color:#fff;
+    margin-bottom:20px;
+}
+.intro_text{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom:10px;
+    background: #fff;
+}
+#all-kind{
+    font-size: 16px;
+    background:#ed5854;
+    padding:0 1px;
+    color:#fff;
+    margin-right:2px;
+}
+#explain{
+    font-size: 13px;
+}
+.intro_text button{
+    font-size: 16px;
+    padding:5px 20px;
+    margin-top:10px;
+    background: #fff;
+    color:#fe5d64;
+    border:2px solid #fe5d64;
+    border-radius:20px;
+}
+.dotted_border{
+    border-top:5px dotted #fff;
+    position: relative;
+    top:-8px;
+}
+/* 不同券的颜色 */
+/* purple紫色 */
+.purpleSt{
+    background:#8764fe !important;
+    border:3px solid #8764fe !important;
+    background:#8764fe;
+}
+.purpleSt{
+    background:#8865ff !important;
+}
+.purpleSt button{
+    color:#8764fe !important;
+    border-color: #8764fe !important;
+}
+.purpleSt #all-kind{
+    background:#8764fe;
+}
+/* pink粉红 */
+.pinkSt{
+    background:#ff64c7 !important;
+    border:3px solid #ff64c7 !important;
+    background: #ff64c7;
+}
+.pinkSt{
+    background:#fe63c8 !important;
+}
+.pinkSt button{
+    color:#ff64c7 !important;
+    border-color: #ff64c7 !important;
+}
+.pinkSt #all-kind{
+    background:#ff64c7;
+}
+/* 激活中的兑换券 样式 tickts_list_2 */
+.tickts_list_2 ul li .intro_text button{
+    width: 45%;
+    color:#8764fe;
+    font-size: 14px;
+    padding:3px 4px;
+    border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+}
+.tickts_list_2 .purpleSt #share_rightNow{
+    background:#8764fe;
+    color:#fff !important;
+}
+.tickts_list_2 .pinkSt #share_rightNow{
+    background: #ff64c7;
+    color:#fff !important;
+}
+/* li元素的遮罩 */
+.shade{
+    position:absolute;
+    top:0%; /**遮罩全屏top,left都为0,width,height为100%**/
+    left:0%; 
+    width:196px; 
+    height:220px; 
+    margin-top:-3px;
+    margin-left:-3px;
+    filter:alpha(opacity=50);
+    opacity: 0.5; 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5;  
+    background-color:black;
+    z-index: 1001;
+    border:3px solid rgba(0 0 0 0.5);
+}
+/* 信息层往上调整 */
+.tickts_list_2 .intro_text{
+    position: absolute;
+    z-index:1002;
+    width:190px;
+}
+.tickts_list_2 .default .intro_text button{
+    color:#fe5d64;
+}
+.tickts_list_3 .intro_text{
+    position: absolute;
+    z-index: 1002;
+    width:190px;
+    height: 90px;
+    padding-bottom: 4px;
+}
+.tickts_list_4 .intro_text{
+    position: absolute;
+    z-index: 1002;
+    width:190px;
+    height: 90px;
+    padding-bottom: 4px;
+}
+.tickts_list_2 .tickets_st{
+    height: 315px;
+}
+.tickts_list_3 .tickets_st{
+    height: 315px;
+}
+.tickts_list_4 .tickets_st{
+    height: 315px;
+}
+/* 激活图标 */
+#need_activate{
+    width:69px;
+    height: 69px;
+    background:#f23b2d;
+    text-align: center;
+    line-height: 69px;
+    border-radius: 34.5px;
+    color:#fff;
+    position: absolute;
+    z-index: 1002;
+    left:60px;
+    top:60px;
+}
+.btn_main:first-child button{
+    color:#ed5854;
+}
+/* bodyshade */
+.main_shade{
+    position:absolute;
+    top:0%; /**遮罩全屏top,left都为0,width,height为100%**/
+    left:0%; 
+    width:100%; 
+    height:100%; 
+    filter:alpha(opacity=50);
+    opacity: 0.5; 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5;  
+    background-color:black;
+    z-index: 1005;  
+    display:none;
+}
+#div_show_main{
+    width:600px;
+    height: 330px;
+    text-align: center;
+    display:none;
+    position: absolute;
+    z-index: 1006;
+    text-align:center;
+    background:#fff;
+}
+.show_main_header{
+    width:100%;
+    height: 50px;
+    background:#f5f5f5;
+    line-height: 50px;
+    text-align: left;
+    text-indent: 20px;
+}
+.show_main_header span{
+    float: right;
+    padding-right: 20px;
+    color:#6d6d6d;
+}
+.share_qrcode{
+    height: 50px;
+    line-height: 50px;
+}
+.qrcode_main{
+    display: inline-block;
+    width:200px;
+    height: 200px;
+    margin-top:30px;
+}
+#qrcode_url{
+    width: 150px;
+    position: relative;
+    left: -4px;
+    padding:2.5px 0;
+}
+#qrcode_copy{
+    display: inline-block;
+    width:40px;
+    line-height: 20px;
+    margin: 0;
+    font-size: 14px;
+    border:1px solid #cccccc;
+    position: relative;
+    top:1px;
+}
